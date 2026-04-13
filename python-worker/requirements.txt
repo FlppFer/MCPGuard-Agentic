@@ -1,0 +1,8 @@
+fastapi>=0.115
+uvicorn[standard]>=0.34
+pydantic>=2.11
+pydantic-settings>=2.7
+httpx>=0.28
+boto3>=1.36
+python-json-logger>=3.2
+tenacity>=9.0
