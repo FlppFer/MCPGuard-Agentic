@@ -4,7 +4,7 @@ AI-powered semantic security analysis microservice for MCP tool repositories. Pa
 
 ## Overview
 
-This worker receives analysis jobs from the Go API, downloads source archives from S3, runs LLM-based security analysis, and posts structured findings back via a callback endpoint.
+This worker receives analysis jobs from the [MCPGuard Go API](https://github.com/FlppFer/MCPGuard), downloads source archives from S3, runs LLM-based security analysis, and posts structured findings back via a callback endpoint.
 
 ### Threat Categories Detected
 

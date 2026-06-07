@@ -3,7 +3,7 @@
 AI-powered agentic security analysis service for the [MCPGuard](https://github.com/FlppFer/MCPGuard) ecosystem.
 
 This repository hosts the **Python agentic worker** that performs LLM-based
-semantic analysis on MCP tool repositories. The MCPGuard Go API enqueues
+semantic analysis on MCP tool repositories. The [MCPGuard Go API](https://github.com/FlppFer/MCPGuard) enqueues
 analysis jobs, uploads the source archive to S3, and dispatches them to this
 worker, which downloads the archive, runs Google Gemini against the source,
 and posts structured findings back to the Go API.
