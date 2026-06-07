@@ -19,7 +19,7 @@ class Settings(BaseSettings):
 
     # LLM (Google Gemini free tier — https://aistudio.google.com/app/apikey)
     llm_api_key: str = Field(default="", alias="LLM_API_KEY")
-    llm_model: str = Field(default="gemini-3.0-flash", alias="LLM_MODEL")
+    llm_model: str = Field(default="gemini-2.5-pro", alias="LLM_MODEL")
 
     # Worker
     worker_port: int = Field(default=5000, alias="WORKER_PORT")

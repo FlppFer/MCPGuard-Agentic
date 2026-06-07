@@ -68,13 +68,17 @@ docker compose up --build
 
 See `.env.example` for all available environment variables. Key settings:
 
+> The worker uses **Google Gemini** exclusively — the analysis call is made
+> directly against the Gemini `generateContent` REST API. There is no
+> multi-provider abstraction.
+
 | Variable | Required | Description |
 |----------|----------|-------------|
-| `LLM_PROVIDER` | Yes | `openai`, `anthropic`, `azure`, etc. |
-| `LLM_API_KEY` | Yes | API key for the LLM provider |
-| `LLM_MODEL` | No | Model to use (default: `gpt-4`) |
+| `LLM_API_KEY` | Yes | Google AI Studio API key (Gemini) |
+| `LLM_MODEL` | No | Gemini model to use (default: `gemini-2.5-pro`) |
 | `MCPGUARD_API_URL` | Yes | Go API base URL for callbacks |
-| `MCPGUARD_API_KEY` | Yes | API key for authenticating with Go API |
+| `MCPGUARD_API_KEY` | Yes | API key for authenticating with the Go API |
+| `MCPGUARD_CLIENT_ID` | No | Client ID sent on callbacks (default: `dev-client`) |
 | `STORAGE_MODE` | No | `s3` or `local` (default: `s3`) |
 
 ## Testing
